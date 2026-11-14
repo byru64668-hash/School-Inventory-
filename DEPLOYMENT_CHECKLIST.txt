@@ -1,0 +1,12 @@
+SCHOOLTRACK EAPIHS — SUPABASE DEPLOYMENT CHECKLIST
+[ ] Enable Anonymous sign-in in Supabase Authentication.
+[ ] Run supabase/schema.sql in SQL Editor.
+[ ] Deploy Edge Function verify-admin-code.
+[ ] Set SCHOOLTRACK_ADMIN_CODE as an Edge Function secret (never in client files).
+[ ] Confirm Edge Function has SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY server-side.
+[ ] Host the public folder using HTTPS.
+[ ] Test guest read-only access and confirm writes are rejected by RLS.
+[ ] Test admin code and administrator CRUD.
+[ ] Test shared updates on a second phone.
+[ ] Test app-shell offline behavior; this build does not queue offline edits.
+[ ] Only use for school records after the school-authorized owner approves and tests it.
